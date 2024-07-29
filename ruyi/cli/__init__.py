@@ -5,7 +5,7 @@ from typing import Callable, List
 
 RUYI_ENTRYPOINT_NAME = "ruyi"
 
-
+# Test on riscv
 def is_called_as_ruyi(argv0: str) -> bool:
     return os.path.basename(argv0) in {RUYI_ENTRYPOINT_NAME, "__main__.py"}
 
