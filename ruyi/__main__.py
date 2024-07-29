@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# Test for riscv builders
+
 if __name__ == "__main__":
     import sys
     import ruyi
