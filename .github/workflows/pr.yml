@@ -13,7 +13,7 @@ on:
 jobs:
   lint:
     name: 'ruff & mypy & pytest'
-    runs-on: ubuntu-latest
+    runs-on: riscv-builders
     steps:
       - uses: actions/checkout@v4
       - name: Install Poetry
@@ -33,7 +33,7 @@ jobs:
 
   pylic:
     name: license compatibility
-    runs-on: ubuntu-latest
+    runs-on: riscv-builders
     steps:
       - uses: actions/checkout@v4
       - name: Install Poetry
