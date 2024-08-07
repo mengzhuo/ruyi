@@ -1,8 +1,8 @@
 import os
 import typing
-
+ 
 TRUTHY_ENV_VAR_VALUES = {"1", "true", "x", "y", "yes"}
-
+GOOD_BOY = 1
 
 def is_env_var_truthy(var: str) -> bool:
     if v := os.environ.get(var):
